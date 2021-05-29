@@ -1,0 +1,43 @@
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="2% grid">
+  <div
+    fxFlex="30%"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    *ngFor="let wine of wines"
+  >
+    <mat-card>
+      <div fxLayout="row">
+        <div fxFlex="40" fxLayoutAlign="center center">
+          <img
+            src="https://storage.googleapis.com/wineshop-assets/wine-bottles/{{
+              wine.image
+            }}"
+            class="wine-image"
+          />
+        </div>
+        <div fxLayout="column" fxFlex="60" fxLayoutAlign="center space-around">
+          <div class="wine-number" fxFlex="20">{{ wine.no }}</div>
+          <div class="wine-title" fxFlex="20">{{ wine.name }}</div>
+          <div fxLayout="row" class="wine-prices" fxFlex="35">
+            <div class="bottle-price" fxFlex="50">
+              Bottle<br />
+              $ {{ wine.cost.bottle }}<br />
+              QTY
+            </div>
+            <div class="case-price" fxFlex="50">
+              Case<br />
+              $ {{ wine.cost.case }}<br />
+              QTY
+            </div>
+          </div>
+          <div fxLayout="row" fxFlex="20">
+            <button class="card-buttons" mat-raised-button>Details</button>
+            <button class="card-buttons" mat-raised-button color="primary">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

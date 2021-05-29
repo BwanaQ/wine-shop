@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+.container{
+  padding: 0px;
+}
+.wine-image{
+  max-height: 200px;
+  max-width:auto;
+}
+.card-buttons{
+  margin: 2px;
+}
+.wine-title{
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: #8e9aaf;
+}
+.wine-number{
+  font-family: 'Merriweather', serif;
+  font-size: 36px;
+  color: #8e9aaf;
+}
+.bottle-price{
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  border-right-style: dotted;
+  margin: 2px 10px 10px 10px;
+}
+.case-price{
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+}
