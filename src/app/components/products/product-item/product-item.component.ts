@@ -12,4 +12,7 @@ export class ProductItemComponent implements OnInit {
   constructor(private msg: MessengerService) {}
 
   ngOnInit(): void {}
+  handleAddToCart() {
+    console.log(this.wine);
+  }
 }

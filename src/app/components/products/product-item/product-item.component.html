@@ -25,7 +25,12 @@
       </div>
       <div fxLayout="row" fxFlex="20">
         <button class="card-buttons" mat-raised-button>Details</button>
-        <button class="card-buttons" mat-raised-button color="primary">
+        <button
+          class="card-buttons"
+          mat-raised-button
+          color="primary"
+          (click)="handleAddToCart()"
+        >
           Add to Cart
         </button>
       </div>
