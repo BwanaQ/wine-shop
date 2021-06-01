@@ -9,4 +9,5 @@ export interface Wine {
   cost: Cost;
   tags: string[];
   details: string;
+  showDescription: boolean;
 }

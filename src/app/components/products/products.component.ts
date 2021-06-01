@@ -1,7 +1,7 @@
+import { MessengerService } from './../../services/messenger.service';
 import { Wine } from './../../models/wine';
 import { WineService } from './../../services/wine.service';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
   wines: Wine[];
-  constructor(private wService: WineService) {}
+  constructor(private wService: WineService, private msg: MessengerService) {}
 
   ngOnInit(): void {
     this.getWines();

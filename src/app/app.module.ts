@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './core/material.module';
+import { SortPipe } from './pipes/sort.pipe';
+import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
+import { ProductItemComponent } from './components/products/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { MaterialModule } from './core/material.module';
     NavbarComponent,
     CartComponent,
     ProductsComponent,
+    SortPipe,
+    CartItemComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule,
