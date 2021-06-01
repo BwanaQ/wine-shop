@@ -14,6 +14,7 @@ import { MaterialModule } from './core/material.module';
 import { SortPipe } from './pipes/sort.pipe';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProductItemComponent } from './components/products/product-item/product
     SortPipe,
     CartItemComponent,
     ProductItemComponent,
+    FiltersComponent,
   ],
   imports: [
     BrowserModule,

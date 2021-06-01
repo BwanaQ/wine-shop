@@ -1,6 +1,7 @@
 import { MessengerService } from './../../../services/messenger.service';
 import { Wine } from './../../../models/wine';
 import { Component, OnInit, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
@@ -8,11 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductItemComponent implements OnInit {
   @Input() wine: Wine;
+  addQuantity: FormGroup;
+  constructor(private msg: MessengerService, private fb: FormBuilder) {}
 
-  constructor(private msg: MessengerService) {}
-
-  ngOnInit(): void {}
-  handleAddToCart() {
-    console.log(this.wine);
+  ngOnInit(): void {
+    this.addQuantity = this.fb.group({
+      bottleQty: [''],
+      caseQty: [''],
+    });
+  }
+  handleAddToCart(bottleQty, caseQty) {
+    console.log(this.wine + bottleQty + caseQty);
   }
 }
