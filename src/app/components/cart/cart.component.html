@@ -1,5 +1,10 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1% grid">
-  <div fxFlex="25%">Delivery Info</div>
+<div
+  class="cart"
+  fxLayout="row"
+  fxLayoutAlign="center center"
+  fxLayoutGap="1% grid"
+>
+  <div fxFlex="25%" fxLayoutAlign="center center">Delivery Info</div>
   <div
     fxFlex="25%"
     fxlayout="row"
@@ -17,6 +22,10 @@
           <app-cart-item></app-cart-item>
         </mat-list-item>
       </mat-list>
+    </div>
+    <div fxLayout="row" fxLayoutGap="16%" fxLayoutAlign="start center">
+      <div class="bottles">$ 235.50</div>
+      <div><button mat-raised-button color="primary">Checkout</button></div>
     </div>
   </div>
 </div>

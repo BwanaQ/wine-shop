@@ -10,4 +10,6 @@ export interface Wine {
   tags: string[];
   details: string;
   showDescription: boolean;
+  bottleQty: number;
+  caseQty: number;
 }
