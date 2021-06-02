@@ -1,1 +1,22 @@
-<p>cart works!?</p>
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="1% grid">
+  <div fxFlex="25%">Delivery Info</div>
+  <div
+    fxFlex="25%"
+    fxlayout="row"
+    fxLayoutAlign="center center"
+    class="bottles"
+    fxLayoutGap="5px"
+  >
+    <div>36</div>
+    <div>Bottles</div>
+  </div>
+  <div fxLayout="column" fxFlex="50%" class="cart">
+    <div fxLayout="row">
+      <mat-list>
+        <mat-list-item *ngFor="let i of [1, 2, 3]">
+          <app-cart-item></app-cart-item>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>

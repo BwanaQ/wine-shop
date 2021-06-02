@@ -15,13 +15,13 @@
         <div fxLayout="row" class="wine-prices" fxFlex="35">
           <div class="bottle-price" fxFlex="50">
             Bottle<br />
-            $ {{ wine.cost.bottle | currency }}<br />
+            {{ wine.cost.bottle | currency }}<br />
             QTY<input #bottleQty id="bottleQty" size="2" />
           </div>
           <div class="case-price" fxFlex="50">
             Case<br />
             {{ wine.cost.case | currency }}<br />
-            QTY<input #caseQty id="caseQty" size="2" />
+            QTY<input #caseQty id="caseQty" size="1" />
           </div>
         </div>
         <div fxLayout="row" fxFlex="20">

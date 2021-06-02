@@ -8,7 +8,7 @@ export class MessengerService {
   subject = new Subject();
   constructor() {}
   sendMsg(wine) {
-    console.log(wine);
+    console.log('message sent: ' + wine);
     this.subject.next(wine);
   }
   getMsg() {

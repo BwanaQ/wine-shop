@@ -19,6 +19,8 @@ export class ProductItemComponent implements OnInit {
     });
   }
   handleAddToCart(bottleQty, caseQty) {
-    console.log(this.wine + bottleQty + caseQty);
+    console.log(this.wine);
+    console.log('Bottle Qty: ' + bottleQty);
+    console.log('case Qty: ' + caseQty);
   }
 }
