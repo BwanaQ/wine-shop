@@ -1,5 +1,19 @@
-<div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
-  <div>{{ cartItem.bottleQty }} x {{ cartItem.productName }} Bottles</div>
-  <div>{{ cartItem.caseQty }} x {{ cartItem.productName }} Cases</div>
-  <div><button mat-raised-button>Remove from cart</button></div>
+<div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+  <div fxLayout="column" fxFlex="90">
+    <div *ngIf="cartItem.bottleQty !== ''">
+      {{ cartItem.bottleQty }} x {{ cartItem.productName }} Bottles
+    </div>
+    <div *ngIf="cartItem.caseQty !== ''">
+      {{ cartItem.caseQty }} x {{ cartItem.productName }} Cases
+    </div>
+  </div>
+  <div>
+    <button
+      mat-mini-fab
+      color="warn"
+      aria-label="Example icon button with a filter list icon"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
 </div>

@@ -12,8 +12,8 @@
     class="bottles"
     fxLayoutGap="5px"
   >
-    <div>36</div>
-    <div>Bottles</div>
+    <div *ngIf="this.bottles > 0">{{ this.bottles }} Bottles</div>
+    <div *ngIf="this.cases > 0">{{ this.cases }} Cases</div>
   </div>
   <div fxLayout="column" fxFlex="50%" class="cart">
     <div fxLayout="row">
